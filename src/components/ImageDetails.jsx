@@ -10,6 +10,8 @@ import {
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import React, { useState } from "react";
 import { red } from "@mui/material/colors";
+import { ShareOutlined } from "@mui/icons-material";
+import CopyToClipboard from "react-copy-to-clipboard";
 
 const ImageDetails = ({
   imageTitle,
@@ -40,6 +42,14 @@ const ImageDetails = ({
         >
           <FavoriteIcon sx={{ color: liked ? red[500] : null }} />
         </IconButton>
+        <CopyToClipboard
+          text={imageUrl}
+          onCopy={() => alert("Image URL is copied")}
+        >
+          <IconButton aria-label="Share Image Link">
+            <ShareOutlined />
+          </IconButton>
+        </CopyToClipboard>
       </CardActions>
     </Card>
   );
