@@ -19,5 +19,5 @@
 
 # References
 
-Styles: https://mui.com/ (Material UI)
-HTTP Client: https://www.npmjs.com/package/axios (AXIOS - to fetch data from API)
+- Styles: https://mui.com/ (Material UI)
+- HTTP Client: https://www.npmjs.com/package/axios (AXIOS - to fetch data from API)
